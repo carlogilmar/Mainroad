@@ -16,9 +16,10 @@
 		</header>
 		<div class="post__content clearfix">
 			{{- if .Params.thumbnail }}
-			<figure class="post__thumbnail">
-				<img src="{{ .Params.thumbnail | absURL }}" alt="{{ .Title }}">
+			<figure>
+				<img style="display:block;margin-left:auto;margin-right:auto;" width="40%" src="{{ .Params.thumbnail | absURL }}" alt="{{ .Title }}">
 			</figure>
+      <br>
 			{{- end }}
 			{{ .Content }}
 		</div>

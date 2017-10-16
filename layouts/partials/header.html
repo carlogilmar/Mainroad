@@ -15,7 +15,6 @@
     <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
     <script src="https://use.fontawesome.com/6ae929583a.js"></script>
     <script type="text/javascript" src="{{ .Site.BaseURL }}js/scripts.js"></script>
-    <script type="text/javascript" src="{{ .Site.BaseURL }}third-party/sharer.js/sharer.js"></script>
 </head>
 
 <body class="body {{ if (.Site.Params.leftsidebar) or (.Params.leftsidebar) }}body-left-sidebar{{ else }}body-right-sidebar{{ end }} mobile" itemscope="itemscope" itemtype="http://schema.org/WebPage">
@@ -30,6 +29,6 @@
 					</a>
 				</div>
 			</div>
-			{{ partial "menu.html" . }}
+      {{ partial "menu.html" . }}
 		</header>
 		<div class="container wrapper clearfix">
